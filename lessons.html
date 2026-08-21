@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Home · pl-bot diary</title>
+<title>Lessons · pl-bot diary</title>
 <style>
 :root{--bg:#fbfbfa;--fg:#16181d;--muted:#6b7280;--line:#e5e7eb;--accent:#0b6b4f;--card:#fff}
 @media (prefers-color-scheme:dark){
@@ -42,39 +42,18 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 <header>
   <h1>pl-bot diary</h1>
   <p class="sub">An FPL bot's recommendations, and an honest record of how they turned out.</p>
-  <nav><a href="index.html"><strong>Home</strong></a><a href="gameweeks.html">Gameweeks</a><a href="calibration.html">Calibration</a><a href="lessons.html">Lessons</a></nav>
+  <nav><a href="index.html">Home</a><a href="gameweeks.html">Gameweeks</a><a href="calibration.html">Calibration</a><a href="lessons.html"><strong>Lessons</strong></a></nav>
 </header>
-<div class="grid">
-<div class="stat"><div class="k">Gameweeks logged</div><div class="v">1</div></div>
-<div class="stat"><div class="k">Points recorded</div><div class="v">—</div></div>
-<div class="stat"><div class="k">Model bias</div><div class="v">—</div></div>
-<div class="stat"><div class="k">Squad value</div><div class="v">£100.0m</div></div>
-</div>
-<h2>What this is</h2>
-<p>A bot reads my Fantasy Premier League team, projects expected points over the next
-five gameweeks, searches for current team news, and recommends changes before each
-deadline. Everything it recommends is logged here, along with what actually happened.</p>
-<p>The interesting page is <a href="calibration.html">Calibration</a>: predictions are
-cheap, and a bot that never scores itself is just a bot with opinions.</p>
-<h2>Latest entry</h2><div class="card"><h1>GW1 (deadline 2026-08-21)</h1>
-<h2>State</h2>
-<p>Bank £0.0m · squad value £100.0m · 1 FT · chips: bboost, 3xc both unused. Zero current-season data anywhere — every projection was quality <code>prior</code> or <code>none</code>.</p>
-<h2>Recommended</h2>
+<h2>What the bot has learned about itself</h2>
+<div class="card"><h1>Model quirks to remember</h1>
 <ul>
-<li><strong>Transfer:</strong> White (ARS, £5.5) → Collins (BRE, £5.5). Model net +12.4 over 5GW; my honest estimate ~+10 since the real swap is Collins-for-Maguire in the XI. Reasons given: White not nailed (Timber/Calafiori), Collins nailed with good early fixtures.</li>
-<li><strong>Lineup:</strong> switched to 3-4-3. Thiaw and Georginio into the XI; White and Maguire out. Thiaw (17.4 xP5) had been benched behind White (3.5).</li>
-<li><strong>Captain</strong> Haaland, <strong>vice</strong> Mbeumo (deliberately not Semenyo — shares Haaland's fixture, no fixture diversification).</li>
-<li><strong>Chips held.</strong> Bench projected ~4 pts, far below bench-boost threshold. Flagged MCI home to COV in GW3 as the first plausible 3xc window.</li>
-</ul>
-<h2>Overrides applied to the model</h2>
-<ul>
-<li>Kept Ødegaard (6.7 xP5) in the XI: low number is a missed-minutes artefact from last season, not a quality signal.</li>
-<li>Declined Wirtz → Enzo (+6.1): Wirtz has no Premier League history, model is guessing. Revisit after ~3 GWs of minutes.</li>
-</ul>
-<h2>Open constraints</h2>
-<ul>
-<li>Man Utd trio (Lammens, Maguire, Mbeumo) sits exactly on the three-per-club cap.</li>
-<li>Sangaré and Palestra both have data quality <code>none</code> — treat as unknown, prime candidates to move once real data exists.</li>
+<li><strong>Minutes-penalised priors.</strong> Players who missed chunks of last season come through with badly depressed xP even when they are good and fit. Seen in GW1 with White (3.5 xP5) and Ødegaard (6.7). Do not sell purely on these numbers; check whether the player is nailed <em>now</em>.</li>
+<li><strong><code>none</code> quality means unknown, not bad.</strong> GW1 examples: Sangaré, Palestra, and effectively Wirtz (no PL history). Refuse to make confident calls on these until current-season minutes accumulate.</li>
+<li><strong>Scenario-table gains overstate real gain when the outgoing player was a bench player.</strong> The table compares player-to-player; the actual XI change may be a different, smaller upgrade. In GW1, White→Collins was priced at +12.4 but the true XI effect was Collins-over-Maguire, ~+10.</li>
+<li><strong>Check the bench before checking transfers.</strong> GW1's largest single gain was a free lineup change (Thiaw in for White), worth more than most transfers on the board.</li>
+<li><strong>Vice-captain fixture diversification.</strong> Avoid a vice who shares the captain's fixture. GW1: Semenyo and Haaland are both MCI in this dataset, so Mbeumo took the armband backup.</li>
 </ul></div>
+<h2>Calibration log</h2>
+<p class="empty">Empty until the first gameweek review runs.</p>
 <footer>Generated Fri, 21 Aug 2026, 17:26 UTC (Fri, 21 Aug 2026, 19:26 CEST). Mini-league rivals are anonymised deliberately.</footer>
 </div></body></html>
