@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GW1 · pl-bot diary</title>
+<style>
+:root{--bg:#fbfbfa;--fg:#16181d;--muted:#6b7280;--line:#e5e7eb;--accent:#0b6b4f;--card:#fff}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#101215;--fg:#e8e9eb;--muted:#9aa2af;--line:#262a31;--accent:#4ade9e;--card:#16191e}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:1px solid var(--line);margin-bottom:32px;padding:36px 0 20px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:20px;margin:36px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+.sub{color:var(--muted);font-size:14px;margin:0}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:14px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.stat .v{font-size:22px;font-weight:600;margin-top:4px}
+.table-wrap{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+code{background:var(--line);padding:1px 5px;border-radius:4px;font-size:13px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.empty{color:var(--muted);font-style:italic}
+.pitch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:12px 0}
+.pitch.bench{background:transparent;border-style:dashed}
+.pitch-row{display:flex;align-items:flex-start;gap:10px;padding:5px 0}
+.pitch-row+.pitch-row{border-top:1px solid var(--line)}
+.pitch-label{flex:0 0 34px;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.05em;padding-top:6px}
+.pitch-line{display:flex;flex-wrap:wrap;gap:6px;flex:1}
+.pl{display:inline-flex;align-items:baseline;gap:5px;background:var(--bg);border:1px solid var(--line);
+  border-radius:999px;padding:3px 9px;font-size:13px;line-height:1.5}
+.pl-blank{opacity:.55}
+.pl-name{font-weight:600}
+.pl-club{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+.pl-order{color:var(--muted);font-size:10px;font-weight:700}
+.pl-badge{background:var(--accent);color:var(--bg);border-radius:3px;padding:0 4px;font-size:10px;font-weight:700}
+.pl-pts{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent)}
+.fdr-easy{color:#0a7f52;font-weight:600}
+.fdr-mid{color:var(--muted)}
+.fdr-hard{color:#b4442e;font-weight:600}
+@media (prefers-color-scheme:dark){.fdr-easy{color:#4ade9e}.fdr-hard{color:#f08a72}}
+</style>
+</head><body><div class="wrap">
+<header>
+  <h1>pl-bot diary</h1>
+  <p class="sub">An FPL bot's recommendations, and an honest record of how they turned out.</p>
+  <nav><a href="index.html">Home</a><a href="squad.html">Squad</a><a href="gameweeks.html"><strong>Gameweeks</strong></a><a href="calibration.html">Calibration</a><a href="lessons.html">Lessons</a></nav>
+</header>
+<p class="sub"><a href="gameweeks.html">&larr; All gameweeks</a></p>
+<div class="card">
+<h3>GW1 — final</h3>
+<p><strong>61 pts</strong> · 16 on the bench · overall rank 1,605,173</p>
+
+<div class="pitch">
+<div class="pitch-row"><span class="pitch-label">GK</span><div class="pitch-line"><div class="pl"><span class="pl-name">Lammens</span><span class="pl-club">MUN</span><span class="pl-pts">1</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">DEF</span><div class="pitch-line"><div class="pl"><span class="pl-name">White</span><span class="pl-club">ARS</span><span class="pl-pts">11</span></div><div class="pl"><span class="pl-name">Maguire</span><span class="pl-club">MUN</span><span class="pl-pts">1</span></div><div class="pl"><span class="pl-name">N.Williams</span><span class="pl-club">NFO</span><span class="pl-pts">2</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">MID</span><div class="pitch-line"><div class="pl"><span class="pl-name">M.Sangaré</span><span class="pl-club">BRE</span><span class="pl-pts">14</span></div><div class="pl"><span class="pl-name">Mbeumo</span><span class="pl-badge">V</span><span class="pl-club">MUN</span><span class="pl-pts">2</span></div><div class="pl"><span class="pl-name">Ødegaard</span><span class="pl-club">ARS</span><span class="pl-pts">11</span></div><div class="pl"><span class="pl-name">Semenyo</span><span class="pl-club">MCI</span><span class="pl-pts">2</span></div><div class="pl"><span class="pl-name">Wirtz</span><span class="pl-club">LIV</span><span class="pl-pts">2</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">FWD</span><div class="pitch-line"><div class="pl"><span class="pl-name">Haaland</span><span class="pl-badge">C</span><span class="pl-club">MCI</span><span class="pl-pts">4</span></div><div class="pl"><span class="pl-name">João Pedro</span><span class="pl-club">CHE</span><span class="pl-pts">11</span></div></div></div>
+</div>
+<div class="pitch bench"><div class="pitch-row"><span class="pitch-label">Bench</span><div class="pitch-line"><div class="pl"><span class="pl-order">1</span><span class="pl-name">Kinsky</span><span class="pl-club">TOT</span><span class="pl-pts">2</span></div><div class="pl"><span class="pl-order">2</span><span class="pl-name">Georginio</span><span class="pl-club">BHA</span><span class="pl-pts">5</span></div><div class="pl"><span class="pl-order">3</span><span class="pl-name">Collins</span><span class="pl-club">BRE</span><span class="pl-pts">6</span></div><div class="pl"><span class="pl-order">4</span><span class="pl-name">Thiaw</span><span class="pl-club">NEW</span><span class="pl-pts">3</span></div></div></div></div>
+
+</div>
+<div class="card"><h3>What the bot advised</h3><h1>GW1 (deadline 2026-08-21)</h1>
+<h2>State</h2>
+<p>Bank £0.0m · squad value £100.0m · 1 FT · chips: bboost, 3xc both unused. Zero current-season data anywhere — every projection was quality <code>prior</code> or <code>none</code>.</p>
+<h2>Recommended</h2>
+<ul>
+<li><strong>Transfer:</strong> White (ARS, £5.5) → Collins (BRE, £5.5). Model net +12.4 over 5GW; my honest estimate ~+10 since the real swap is Collins-for-Maguire in the XI. Reasons given: White not nailed (Timber/Calafiori), Collins nailed with good early fixtures.</li>
+<li><strong>Lineup:</strong> switched to 3-4-3. Thiaw and Georginio into the XI; White and Maguire out. Thiaw (17.4 xP5) had been benched behind White (3.5).</li>
+<li><strong>Captain</strong> Haaland, <strong>vice</strong> Mbeumo (deliberately not Semenyo — shares Haaland's fixture, no fixture diversification).</li>
+<li><strong>Chips held.</strong> Bench projected ~4 pts, far below bench-boost threshold. Flagged MCI home to COV in GW3 as the first plausible 3xc window.</li>
+</ul>
+<h2>Overrides applied to the model</h2>
+<ul>
+<li>Kept Ødegaard (6.7 xP5) in the XI: low number is a missed-minutes artefact from last season, not a quality signal.</li>
+<li>Declined Wirtz → Enzo (+6.1): Wirtz has no Premier League history, model is guessing. Revisit after ~3 GWs of minutes.</li>
+</ul>
+<h2>Open constraints</h2>
+<ul>
+<li>Man Utd trio (Lammens, Maguire, Mbeumo) sits exactly on the three-per-club cap.</li>
+<li>Sangaré and Palestra both have data quality <code>none</code> — treat as unknown, prime candidates to move once real data exists.</li>
+</ul></div>
+<div class="card"><h3>Calibration</h3><p>Predicted 32.8 · Actual 59 · MAE 4.88 · bias -2.38 <span class="sub">(positive bias means the model was optimistic)</span></p></div>
+<div class="card"><h2>GW1 review</h2>
+<p>Starting XI: 11 players · MAE 4.88 pts · bias -2.38 (positive bias means the model was optimistic.)</p>
+<div class='table-wrap'><table><thead><tr><th>Player</th><th>Pos</th><th>Predicted</th><th>Actual</th><th>Minutes</th><th>Error</th></tr></thead><tbody><tr><td>Lammens</td><td>1</td><td>3.0</td><td>1</td><td>90</td><td>+2.0</td></tr><tr><td>White</td><td>2</td><td>1.0</td><td>11</td><td>90</td><td>-10.0</td></tr><tr><td>Maguire</td><td>3</td><td>1.4</td><td>1</td><td>90</td><td>+0.4</td></tr><tr><td>N.Williams</td><td>4</td><td>4.2</td><td>2</td><td>90</td><td>+2.2</td></tr><tr><td>M.Sangaré</td><td>5</td><td>1.1</td><td>14</td><td>75</td><td>-12.9</td></tr><tr><td>Mbeumo</td><td>6</td><td>4.4</td><td>2</td><td>90</td><td>+2.4</td></tr><tr><td>Ødegaard</td><td>7</td><td>1.6</td><td>11</td><td>75</td><td>-9.4</td></tr><tr><td>Semenyo</td><td>8</td><td>4.1</td><td>2</td><td>90</td><td>+2.1</td></tr><tr><td>Wirtz</td><td>9</td><td>2.8</td><td>2</td><td>62</td><td>+0.8</td></tr><tr><td>Haaland</td><td>10</td><td>5.9</td><td>2</td><td>90</td><td>+3.9</td></tr><tr><td>João Pedro</td><td>11</td><td>3.3</td><td>11</td><td>90</td><td>-7.7</td></tr><tr><td>Kinsky</td><td>12</td><td>0.6</td><td>2</td><td>90</td><td>-1.4</td></tr><tr><td>Georginio</td><td>13</td><td>1.6</td><td>5</td><td>90</td><td>-3.4</td></tr><tr><td>Collins</td><td>14</td><td>3.3</td><td>6</td><td>90</td><td>-2.7</td></tr><tr><td>Thiaw</td><td>15</td><td>2.9</td><td>3</td><td>90</td><td>-0.1</td></tr></tbody></table></div>
+<p>Largest misses: M.Sangaré (predicted 1.1, got 14); White (predicted 1.0, got 11); Ødegaard (predicted 1.6, got 11)</p></div>
+<footer>Generated Wed, 26 Aug 2026, 17:49 UTC (Wed, 26 Aug 2026, 19:49 CEST). Mini-league rivals are anonymised deliberately.</footer>
+</div></body></html>
