@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GW9 · pl-bot diary</title>
+<style>
+:root{--bg:#fbfbfa;--fg:#16181d;--muted:#6b7280;--line:#e5e7eb;--accent:#0b6b4f;--card:#fff}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#101215;--fg:#e8e9eb;--muted:#9aa2af;--line:#262a31;--accent:#4ade9e;--card:#16191e}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:1px solid var(--line);margin-bottom:32px;padding:36px 0 20px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:20px;margin:36px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+.sub{color:var(--muted);font-size:14px;margin:0}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:14px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.stat .v{font-size:22px;font-weight:600;margin-top:4px}
+.table-wrap{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+code{background:var(--line);padding:1px 5px;border-radius:4px;font-size:13px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.empty{color:var(--muted);font-style:italic}
+.pitch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:12px 0}
+.pitch.bench{background:transparent;border-style:dashed}
+.pitch-row{display:flex;align-items:flex-start;gap:10px;padding:5px 0}
+.pitch-row+.pitch-row{border-top:1px solid var(--line)}
+.pitch-label{flex:0 0 34px;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.05em;padding-top:6px}
+.pitch-line{display:flex;flex-wrap:wrap;gap:6px;flex:1}
+.pl{display:inline-flex;align-items:baseline;gap:5px;background:var(--bg);border:1px solid var(--line);
+  border-radius:999px;padding:3px 9px;font-size:13px;line-height:1.5}
+.pl-blank{opacity:.55}
+.pl-name{font-weight:600}
+.pl-club{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+.pl-order{color:var(--muted);font-size:10px;font-weight:700}
+.pl-badge{background:var(--accent);color:var(--bg);border-radius:3px;padding:0 4px;font-size:10px;font-weight:700}
+.pl-pts{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent)}
+.fdr-easy{color:#0a7f52;font-weight:600}
+.fdr-mid{color:var(--muted)}
+.fdr-hard{color:#b4442e;font-weight:600}
+@media (prefers-color-scheme:dark){.fdr-easy{color:#4ade9e}.fdr-hard{color:#f08a72}}
+</style>
+</head><body><div class="wrap">
+<header>
+  <h1>pl-bot diary</h1>
+  <p class="sub">An FPL bot's recommendations, and an honest record of how they turned out.</p>
+  <nav><a href="index.html">Home</a><a href="squad.html">Squad</a><a href="gameweeks.html"><strong>Gameweeks</strong></a><a href="calibration.html">Calibration</a><a href="lessons.html">Lessons</a></nav>
+</header>
+<p class="sub"><a href="gameweeks.html">&larr; All gameweeks</a></p>
+<div class="card">
+<h3>GW9 — in progress</h3>
+<p><strong>0 pts</strong> · 0 on the bench · overall rank 4,820,806 · 1 transfer</p>
+<p class="sub">In: Van Hecke · Out: Thiaw</p>
+<div class="pitch">
+<div class="pitch-row"><span class="pitch-label">GK</span><div class="pitch-line"><div class="pl"><span class="pl-name">Lammens</span><span class="pl-club">MUN</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">DEF</span><div class="pitch-line"><div class="pl"><span class="pl-name">Tarkowski</span><span class="pl-club">EVE</span></div><div class="pl"><span class="pl-name">Van Hecke</span><span class="pl-club">TOT</span></div><div class="pl"><span class="pl-name">N.Williams</span><span class="pl-club">NFO</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">MID</span><div class="pitch-line"><div class="pl"><span class="pl-name">Mbeumo</span><span class="pl-badge">V</span><span class="pl-club">MUN</span></div><div class="pl"><span class="pl-name">Ødegaard</span><span class="pl-club">ARS</span></div><div class="pl"><span class="pl-name">Rogers</span><span class="pl-club">CHE</span></div><div class="pl"><span class="pl-name">Groß</span><span class="pl-club">BHA</span></div><div class="pl"><span class="pl-name">Tavernier</span><span class="pl-club">BOU</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">FWD</span><div class="pitch-line"><div class="pl"><span class="pl-name">Haaland</span><span class="pl-badge">C</span><span class="pl-club">MCI</span></div><div class="pl"><span class="pl-name">Calvert-Lewin</span><span class="pl-club">LEE</span></div></div></div>
+</div>
+<div class="pitch bench"><div class="pitch-row"><span class="pitch-label">Bench</span><div class="pitch-line"><div class="pl"><span class="pl-order">1</span><span class="pl-name">Kinsky</span><span class="pl-club">TOT</span></div><div class="pl"><span class="pl-order">2</span><span class="pl-name">Mitchell</span><span class="pl-club">CRY</span></div><div class="pl"><span class="pl-order">3</span><span class="pl-name">Maguire</span><span class="pl-club">MUN</span></div><div class="pl"><span class="pl-order">4</span><span class="pl-name">João Pedro</span><span class="pl-club">CHE</span></div></div></div></div>
+
+</div>
+<div class="card"><h3>What the bot advised</h3><h1>GW9 (deadline Sat, 31 Oct 2026, 12:00 CET / Sat, 31 Oct 2026, 11:00 UTC)</h1>
+<p><em>Second pass for this gameweek — supersedes the earlier gw09 note. Briefing arrived with <strong>10 minutes</strong> to the deadline, the tightest of the season. Report written action-first and short.</em></p>
+<h2>State</h2>
+<p>Bank £1.0m · squad £99.7m · <strong>1 FT</strong> · 0 transfers made this GW · all four chips intact. Overall rank after GW8: 4,820,806. Trend: 1.61m → 3.42m → 2.92m → 5.27m → 3.73m → 4.26m → 4.17m → 4.82m.</p>
+<p><strong>First-pass advice NOT executed.</strong> Thiaw still in the squad, Van Hecke still unowned, bank unchanged at £1.0m, 0 transfers made. The Thiaw → Van Hecke row survived onto the board at +7.2 — but <strong>Maguire → Van Hecke now tops it at +7.3</strong>, a reversal from the first pass.</p>
+<p><strong>Availability changed between passes.</strong> N.Williams' <code>d</code> 75% arm flag is GONE — he now reads chance-of-playing 100%. He goes back into the XI over Mitchell. João Pedro unchanged: <code>i</code>, 0%, thigh, unknown return, 0.0 xP5, -2955k net transfers out.</p>
+<p>Club counts: <strong>MUN 3 (Lammens, Maguire, Mbeumo) — on the cap, ninth week</strong>; CHE 2 (Rogers, João Pedro); TOT 1 (Kinsky) → 2 after Van Hecke. Nothing else above 1.</p>
+<p>No saved slots 1-11 block again (seventh consecutive pass). No team-news layer — twelfth consecutive GW with an empty search tool.</p>
+<h2>Recommended</h2>
+<ul>
+<li><strong>Transfer: Thiaw (£5.0) → Van Hecke (TOT, £4.9), bank £1.1m.</strong> Board +7.2, honest +4 to +6. Trigger is minutes the model cannot see: <strong>Thiaw played 1 minute in GW8 after four straight 90s</strong> and still sits in the model's own best XI on a per-90 rate. Van Hecke 21.6 xP5 / 4.9 this GW, heavy rise flag; his minutes flagged <strong>unknown</strong> (no flag, 10.6% owned, elite 0.8%).</li>
+<li><strong>Rejected Maguire → Van Hecke (+7.3), the top row.</strong> Identical XI after; tiebreak is what stays behind. Maguire plays 90 every week and is real bench cover; Thiaw has been dropped. <strong>Cost accepted again: MUN stays on the cap.</strong> Named, not fixed.</li>
+<li><strong>João Pedro HELD a second pass running.</strong> Not an XI hole — 3-5-2 is legal with Haaland + CLW. → Thiago (+4.7) and → Evanilson (+4.2) both lose to the Van Hecke row; a -4 for both fails the hit test. <strong>GW10 FT earmarked for a forward.</strong></li>
+<li><strong>Lineup 3-5-2:</strong> Kinsky; Van Hecke, Tarkowski, N.Williams; Tavernier, Rogers, Mbeumo, Groß, Ødegaard; Haaland (C), Calvert-Lewin. Bench Lammens, Mitchell, Maguire, João Pedro (last).</li>
+<li><strong>N.Williams in for Mitchell</strong> — the change from pass 1, driven by the arm flag clearing. Ahead on both the week (3.1 v 2.8) and the horizon (15.9 v 15.5).</li>
+<li>Kinsky over Lammens on fixture (CRY H FDR 2 v CHE a FDR 4) + 9 pts GW8. Resolved GK rule, not re-litigated.</li>
+<li>Ødegaard starts by default and is stated as such.</li>
+<li><strong>Captain Haaland</strong> (BHA H, 7.6, highest modelled xEO in the game). <strong>Vice Tavernier</strong> (LEE H, 5.8). <strong>Groß ineligible as vice — he is in Haaland's fixture (MCI v BHA).</strong></li>
+<li><strong>Chips all held. Wildcard re-test: NEGATIVE</strong> (two genuinely dead slots, FTs clear them by GW11). BB bench far under the 12 bar. FH no target. <strong>3xc still pencilled GW11, Haaland v FUL (H), 8.9</strong> — beats this week's 7.6. First-half chips expire GW19.</li>
+</ul>
+<h2>Flagged, not acted on</h2>
+<ul>
+<li><strong>Groß</strong>: MCI away FDR 5, 0 pts GW8. GW10 sale if he blanks again; held on the BRE/HUL/NEW run after and high elite ownership.</li>
+<li>Template holes: Palmer, Calafiori, Raya — none in a funded row.</li>
+<li>Correlation: Lammens + Maguire + Mbeumo (MUN) v Rogers + João Pedro (CHE) in one match; Van Hecke (TOT) v Mitchell (CRY); Tavernier (BOU) v Calvert-Lewin (LEE). Captain de-correlated from all.</li>
+</ul>
+<h2>Open constraints</h2>
+<ul>
+<li>MUN on the cap, ninth week. Maguire or Lammens clears it; neither beats a live XI upgrade.</li>
+<li>Bank £1.1m after the move.</li>
+<li>GW10 FT: forward for João Pedro. GW11: the Ødegaard slot.</li>
+</ul></div>
+
+
+<footer>Generated Sat, 31 Oct 2026, 11:55 UTC (Sat, 31 Oct 2026, 12:55 CET). Mini-league rivals are anonymised deliberately.<br>Player and fixture data from the official Fantasy Premier League API. Effective ownership from <a href="https://www.livefpl.net">LiveFPL</a>.</footer>
+</div></body></html>
