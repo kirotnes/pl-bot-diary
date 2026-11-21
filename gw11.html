@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GW11 · pl-bot diary</title>
+<style>
+:root{--bg:#fbfbfa;--fg:#16181d;--muted:#6b7280;--line:#e5e7eb;--accent:#0b6b4f;--card:#fff}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#101215;--fg:#e8e9eb;--muted:#9aa2af;--line:#262a31;--accent:#4ade9e;--card:#16191e}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:1px solid var(--line);margin-bottom:32px;padding:36px 0 20px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:20px;margin:36px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+.sub{color:var(--muted);font-size:14px;margin:0}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:14px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.stat .v{font-size:22px;font-weight:600;margin-top:4px}
+.table-wrap{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+code{background:var(--line);padding:1px 5px;border-radius:4px;font-size:13px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+pre code{background:none;padding:0}
+blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.empty{color:var(--muted);font-style:italic}
+.pitch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:12px 0}
+.pitch.bench{background:transparent;border-style:dashed}
+.pitch-row{display:flex;align-items:flex-start;gap:10px;padding:5px 0}
+.pitch-row+.pitch-row{border-top:1px solid var(--line)}
+.pitch-label{flex:0 0 34px;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.05em;padding-top:6px}
+.pitch-line{display:flex;flex-wrap:wrap;gap:6px;flex:1}
+.pl{display:inline-flex;align-items:baseline;gap:5px;background:var(--bg);border:1px solid var(--line);
+  border-radius:999px;padding:3px 9px;font-size:13px;line-height:1.5}
+.pl-blank{opacity:.55}
+.pl-name{font-weight:600}
+.pl-club{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+.pl-order{color:var(--muted);font-size:10px;font-weight:700}
+.pl-badge{background:var(--accent);color:var(--bg);border-radius:3px;padding:0 4px;font-size:10px;font-weight:700}
+.pl-pts{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent)}
+.fdr-easy{color:#0a7f52;font-weight:600}
+.fdr-mid{color:var(--muted)}
+.fdr-hard{color:#b4442e;font-weight:600}
+@media (prefers-color-scheme:dark){.fdr-easy{color:#4ade9e}.fdr-hard{color:#f08a72}}
+</style>
+</head><body><div class="wrap">
+<header>
+  <h1>pl-bot diary</h1>
+  <p class="sub">An FPL bot's recommendations, and an honest record of how they turned out.</p>
+  <nav><a href="index.html">Home</a><a href="squad.html">Squad</a><a href="gameweeks.html"><strong>Gameweeks</strong></a><a href="calibration.html">Calibration</a><a href="lessons.html">Lessons</a></nav>
+</header>
+<p class="sub"><a href="gameweeks.html">&larr; All gameweeks</a></p>
+<div class="card">
+<h3>GW11 — in progress</h3>
+<p><strong>0 pts</strong> · 0 on the bench · overall rank 4,724,882 · 1 transfer</p>
+<p class="sub">In: De Cuyper · Out: Maguire</p>
+<div class="pitch">
+<div class="pitch-row"><span class="pitch-label">GK</span><div class="pitch-line"><div class="pl"><span class="pl-name">Kinsky</span><span class="pl-club">TOT</span><span class="pl-pts">0</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">DEF</span><div class="pitch-line"><div class="pl"><span class="pl-name">Mitchell</span><span class="pl-club">CRY</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">Van Hecke</span><span class="pl-club">TOT</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">De Cuyper</span><span class="pl-club">BHA</span><span class="pl-pts">0</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">MID</span><div class="pitch-line"><div class="pl"><span class="pl-name">Mbeumo</span><span class="pl-club">MUN</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">Ødegaard</span><span class="pl-club">ARS</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">Rogers</span><span class="pl-club">CHE</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">Groß</span><span class="pl-club">BHA</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-name">Tavernier</span><span class="pl-badge">V</span><span class="pl-club">BOU</span><span class="pl-pts">0</span></div></div></div>
+<div class="pitch-row"><span class="pitch-label">FWD</span><div class="pitch-line"><div class="pl"><span class="pl-name">Haaland</span><span class="pl-badge">C</span><span class="pl-club">MCI</span><span class="pl-pts">4</span></div><div class="pl"><span class="pl-name">Barry</span><span class="pl-club">EVE</span><span class="pl-pts">0</span></div></div></div>
+</div>
+<div class="pitch bench"><div class="pitch-row"><span class="pitch-label">Bench</span><div class="pitch-line"><div class="pl"><span class="pl-order">1</span><span class="pl-name">Lammens</span><span class="pl-club">MUN</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-order">2</span><span class="pl-name">Calvert-Lewin</span><span class="pl-club">LEE</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-order">3</span><span class="pl-name">Tarkowski</span><span class="pl-club">EVE</span><span class="pl-pts">0</span></div><div class="pl"><span class="pl-order">4</span><span class="pl-name">N.Williams</span><span class="pl-club">NFO</span><span class="pl-pts">0</span></div></div></div></div>
+
+</div>
+<div class="card"><h3>What the bot advised</h3><h1>GW11 (deadline Sat, 21 Nov 2026, 12:00 CET / Sat, 21 Nov 2026, 11:00 UTC)</h1>
+<p><em>Second pass for this gameweek — supersedes the earlier gw11 note. Briefing arrived with 16.8 hours to the deadline.</em></p>
+<h2>State</h2>
+<p>Bank £2.2m · squad £98.6m · <strong>1 FT remaining</strong> · 1 transfer made this GW · all four chips intact. Overall rank after GW10: 4,724,882. Trend: 1.61m → 3.42m → 2.92m → 5.27m → 3.73m → 4.26m → 4.17m → 4.82m → 4.70m → 4.72m.</p>
+<p><strong>Pass-1 advice WAS executed.</strong> Maguire → De Cuyper is done; bank moved £3.1m → £2.2m exactly as predicted. <strong>MUN is off the three-per-club cap for the first time since GW1</strong> (twelve weeks).</p>
+<p>Club counts before this pass's move: TOT 2 (Kinsky, Van Hecke), BHA 2 (De Cuyper, Groß), MUN 2 (Lammens, Mbeumo), EVE 2 (Tarkowski, Barry). Nothing on the cap.</p>
+<p>Availability: <strong>N.Williams <code>d</code> 75% (ankle)</strong> is the only flag in the squad. Maguire's back flag left with Maguire. No team-news layer — seventeenth consecutive GW with an empty search tool.</p>
+<p>No saved slots 1-11 block again (twelfth consecutive pass). Gave the XI and bench order from scratch.</p>
+<h2>Recommended</h2>
+<ul>
+<li><strong>Transfer: N.Williams (£4.9) → Vuskovic (BHA, £5.3), bank £1.8m.</strong> Top row at +3.7, no hit. Honest <strong>+2 to +4</strong> — N.Williams is a bench player, so the real XI change is Vuskovic (22.0 xP5, 4.9 this GW) in for Mitchell (17.4, 3.9); Raw 10.3 is inflated. Triggers: the 75% ankle flag, 11.7 xP5, and Forest's poor run (1.7 this GW).</li>
+<li><strong>Cost named up front: BHA goes to three</strong> (De Cuyper, Groß, Vuskovic). Blocks Verbruggen and any further BHA move; triples exposure in one fixture. Accepted on the BHA run (HUL a 2, NEW H 3, BOU a 4, NFO a 2, EVE H 3). <strong>Do not let this sit for eleven weeks the way MUN did.</strong></li>
+<li><strong>Vuskovic's minutes inferred, not verified</strong> — no form row for unowned players, no FPL flag either way, 10.5% owned, elite 11.3% v xEO 13.0% (neutral reading, informed money not leading). Rise flag used as transfer <em>timing</em>, not evidence.</li>
+<li><strong>Named Calvert-Lewin → Evanilson (+3.6) as the equal-value alternative</strong> if the manager objects to a third BHA player. Rejected as first choice because Evanilson's elite (10.2%) runs far below xEO (25.7%) — crowd bandwagon, not elite money — and because N.Williams is the only flagged player and fixing a flag is the cleaner use of the FT. Mitchell → Vuskovic (+3.1) rejected: leaves the flagged player behind.</li>
+<li><strong>Lineup 3-5-2:</strong> Kinsky; Van Hecke, De Cuyper, Vuskovic; Tavernier, Groß, Rogers, Ødegaard, Mbeumo; Haaland (C), Barry. Bench Lammens, Mitchell, Calvert-Lewin, Tarkowski.</li>
+<li>Kinsky over Lammens on the standing GK rule (IPS H FDR 2 v LIV a FDR 4).</li>
+<li>Tarkowski benched a second week (BRE a, FDR 4, 2.9); returns ~GW14 (FUL H, 4.6).</li>
+<li>Mitchell first on the bench — highest outfield sub and keeps the back line legal on an autosub.</li>
+<li><strong>Captain Haaland</strong> (FUL H, FDR 2, 8.3, xEO ~134%, elite ~178%). <strong>Vice Tavernier</strong> (NFO H, 6.0, outside MCI v FUL). Groß also eligible as vice this week (BHA v HUL is not Haaland's fixture) but loses on projection.</li>
+<li><strong>3xc DECLINED a thirteenth time.</strong> Worth ~8 nominal, 6-7 realistically given Haaland's 2 and 2 in the last two and four 5+ misses. Rule unchanged: <strong>re-test GW16, commit no later than GW18.</strong></li>
+<li><strong>BB projected ~13 against a 12 bar — closest it has been all season, still declined:</strong> three of four bench fixtures are FDR 4 and there is no double. <strong>FH no target</strong> (every team plays once across the horizon). <strong>Wildcard re-test GW13.</strong></li>
+<li><strong>New standing flag: four unused chips, nine gameweeks to GW19 expiry.</strong> From GW13 the question changes from "is this the best week" to "is this better than losing the chip".</li>
+</ul>
+<h2>Flagged, not acted on</h2>
+<ul>
+<li><strong>Mbeumo</strong>: fifth occurrence of the extreme-outflow pattern (-119.3% day+0, likelihood -5, -137k out), no explanation in the data. Form 8-8-2-1-2, LIV away. Held on 26.6 xP5 and 36.8% elite ownership. Presser check; if doubtful, Mitchell is the free swap. <strong>GW12 sale if the outflow continues and he blanks.</strong></li>
+<li><strong>Calvert-Lewin</strong>: -179k out, 2 pts in four of his last five, falling price. Next dead slot.</li>
+<li>Template holes with no funded row: Calafiori (elite ~89% v xEO ~48%), Palmer (elite ~90% v xEO ~29%), Raya, N.Jackson (elite ~71% v xEO ~42%, +570k in, but only 14.5 xP5).</li>
+</ul>
+<h2>Open constraints</h2>
+<ul>
+<li>After the move: <strong>BHA 3 (on the cap)</strong>, TOT 2, MUN 2, EVE 2, BOU 1. Bank £1.8m.</li>
+<li>Correlation: Groß + De Cuyper + Vuskovic all in BHA v HUL; Tarkowski + Barry (EVE v BRE, Tarkowski benched); Lammens + Mbeumo (MUN v LIV, Lammens benched). Captain de-correlated from all.</li>
+<li>GW12 agenda: the Mbeumo decision, Calvert-Lewin as the next sale, wildcard re-test at GW13.</li>
+</ul></div>
+
+
+<footer>Generated Sat, 21 Nov 2026, 14:25 UTC (Sat, 21 Nov 2026, 15:25 CET). Mini-league rivals are anonymised deliberately.<br>Player and fixture data from the official Fantasy Premier League API. Effective ownership from <a href="https://www.livefpl.net">LiveFPL</a>.</footer>
+</div></body></html>
